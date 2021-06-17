@@ -29,7 +29,7 @@ header{
     align-items: center;
 }
 
-.header-left a{
+.header-left a {
 
     text-decoration: none;
     
@@ -61,10 +61,10 @@ header{
 
 
 .header-right {
-    width: 100%;
+    width: 400px;
     display: flex;
     align-items: center;
-    flex-grow: 2;
+    /* flex-grow: 2; */
 }
 
 /* .header-right > a {
