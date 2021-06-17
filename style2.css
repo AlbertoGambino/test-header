@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-bg{
+
+
+    background-color: #2E3333;
+    height: 300px;
+    width: 100%;
+
+}
+
+.footer-card-container{
+
+    width: 60%;
+    margin: auto;
+    
+}
+
+.footer-card{
+
+    background-color: #434848;
+
+    width: calc(100%/4.2);
+    height: 95%;
+}
+
+
+
+
