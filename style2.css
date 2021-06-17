@@ -17,17 +17,25 @@
 
     width: 60%;
     margin: auto;
+    display: flex;
     
 }
 
 .footer-card{
 
     background-color: #434848;
-
-    width: calc(100%/4.2);
+    margin: 20px;
+    padding: 15px;
+    width: calc(100%/4.1);
     height: 95%;
+    color: white;
+    border-radius: 5px;
+    
 }
 
+.footer-card li{
 
+    list-style: none;
+}
 
 
