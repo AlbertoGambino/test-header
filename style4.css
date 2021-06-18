@@ -24,19 +24,30 @@ h1{
 }
 
 span{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    padding-bottom: 10px;
+    padding-right: 5px;
     top: 40%;
     font-weight: bold;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
     color: purple;
     cursor: pointer;
-    left: .5%;
+    /* left: .5%; */
+    border: 1px solid green;
+    border-radius: 50%;
+    left: 0;
     z-index: 1;
+    background: white;
 }
 
 span:nth-of-type(2){
 
-    left: 98%;
+    left: 97%;
     text-align: right;
 }
 
@@ -71,4 +82,5 @@ div{
     color: white;
     background: purple;
     transition: 0.5s;
+    border-radius: 5px;
 }
