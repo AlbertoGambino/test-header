@@ -4,36 +4,30 @@
     box-sizing: border-box;
 }
 
-main{
+.main-carousel{
 
     width: 100%;
     height: 400px;
-    margin: 200px auto;
+    margin: auto;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-h1{
-
-    width: 90%;
-    margin: 10px auto;
-    background: #1967D2;
-    font-weight: bold;
-    color: white;
-}
-
-span{
+.carousel-span{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     padding-bottom: 10px;
     padding-right: 5px;
-    top: 40%;
+    top: 45%;
     font-weight: bold;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     font-size: 50px;
     color: purple;
     cursor: pointer;
@@ -45,42 +39,58 @@ span{
     background: white;
 }
 
-span:nth-of-type(2){
+.right-arrow{
 
     left: 97%;
     text-align: right;
 }
 
-section{
+.section-carousel{
 
     width: 98%;
-    height: 300px;
+    height: 150px;
     background: #f4f4f4;
     margin: 10px auto;
     display: flex;
     justify-content: left;
+    align-items: center;
     overflow-x: auto;
 }
 
-section::-webkit-scrollbar{
+/* section::-webkit-scrollbar{
 
     visibility: hidden;
 
-}
+} */
 
-div{
+.carousel-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 500px;
+    height: 200px; */
 
-    min-width: 330px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
     position: relative;
     left: 0;
     text-align: center;
-    padding-top: 60px;
-    font-size: 100px;
-    font-weight: bold;
+    /* padding-top: 60px; */
+    /* font-size: 100px; */
+    /* font-weight: bold; */
     margin: 10px 20px;
+    border: 1px solid red;
     color: white;
-    background: purple;
+    /* background: purple; */
     transition: 0.5s;
     border-radius: 5px;
+}
+
+.carousel-images img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
 }

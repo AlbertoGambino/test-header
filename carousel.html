@@ -6,40 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style4.css">
-    <title>Document</title>
+    <title>Carousel</title>
 </head>
 <body>
 
-    <main>
+    <div class="main-carousel">
 
-        <h1>I tuoi piatti preferiti</h1>
+        
 
-        <span>&#139;</span>
-        <span>&#155;</span>
+        <span class="carousel-span">&#139;</span>
+        <span class="carousel-span right-arrow">&#155;</span>
 
-        <section>
+        <div class="section-carousel">
 
-            <div>01</div>
-            <div>02</div>
-            <div>03</div>
-            <div>04</div>
-            <div>05</div>
-            <div>06</div>
-            <div>07</div>
-            <div>08</div>
-            <div>09</div>
-            <div>10</div>
+            <div class="carousel-images">
 
-        </section>
+                <img src="images/barca-sushi.jpg" alt="">
+
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/burgerking.jpg" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/dunkindonuts.jpg" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/grom.png" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/gyoza.jpg" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/hamburger-patate.jpg" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/hamburger.jpg" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/kfc.jpg" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/pizza.jpg" alt="">
+            
+            </div>
+            <div class="carousel-images">
+            
+                <img src="images/poke.jpg" alt="">
+            
+            </div>
+            
+
+        </div>
 
 
 
-    </main>
+    </div>
     
     <script type="text/javascript">
 
-        var span = document.getElementsByTagName('span');
-        var div = document.getElementsByTagName('div');
+        var span = document.getElementsByClassName('carousel-span');
+        var div = document.getElementsByClassName('carousel-images');
         var l = 0;
         span[1].onclick = () => {
 
