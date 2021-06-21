@@ -11,17 +11,16 @@
 }
 
 .container-form-owner{
+    height: 100%;
 
-    height: calc(100vh-100px);
-    width: 100%;
 }
 
 .container-form-owner-bg{
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: cover;
 
-    /* height: 100%;
-    width: 100%; */
-    background: linear-gradient(45deg,white, #00CCBC);
-    border: 1px solid red;
 }
 
 .container-form-owner-collector{
