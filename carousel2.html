@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="carousel2.css">
 
     <script src="carousel2.js"></script>
+    
 </head>
 <body>
-
-    <div id="secondary-slider" class="splide">
-        <div class="splidetrack">
-            <ul class="splidelist">
-                <li class="splideslide">
-                    <img src="thumbnail01.jpg">
-                </li>
-                <li class="splideslide">
-                    <img src="thumbnail02.jpg">
-                </li>
-                <li class="splideslide">
-                    <img src="thumbnail03.jpg">
-                </li>
-            </ul>
+    <div class="container">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">0</li>
+                    <li class="glide__slide">1</li>
+                    <li class="glide__slide">2</li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
         </div>
     </div>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide').mount()
+    </script>
 </body>
 </html>
