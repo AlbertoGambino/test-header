@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::placeholder{
+
+    color: #AFAFAF;
+    opacity: 1;
+}
+
+.container-form-owner{
+
+    height: calc(100vh-100px);
+    width: 100%;
+}
+
+.container-form-owner-bg{
+
+    /* height: 100%;
+    width: 100%; */
+    background: linear-gradient(45deg,white, #00CCBC);
+    border: 1px solid red;
+}
+
+.container-form-owner-collector{
+
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+
+.container-form-owner-form{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.owner-form-partner{
+
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.owner-form-span{
+
+    margin: 20px 0;
+    color: #828585;
+}
+
+.form-name-address{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name-address input{
+
+    line-height: 35px;
+    margin: 10px 0;
+    padding-left: 15px;
+}
+
+.form-citta-cap, .form-nome-cognome, .form-mail-cell{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-citta input, .form-cap input, .form-nome input, .form-cognome input, .form-mail input, .form-cell input{
+
+    line-height: 35px;
+    margin: 10px 0;
+    padding-left: 15px;
+    width: 300px;
+    
+}
+
+.form-select{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-select select{
+
+    width: 100%;
+    margin: 10px 0;
+    height: 35px;
+    padding-left: 15px;
+    color: #AFAFAF;
+}
+
+/* select option{
+
+    color: #AFAFAF;
+} */
+
+.form-button-submit-container{
+
+    background-color: #00CCBC;
+    border: 2px solid white;
+    line-height: 35px;
+    text-align: center;
+    width: 240px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.form-button-submit-container button{
+
+    border: none;
+    background: none;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 100px;
+    cursor: pointer;
+}
+
+.container-final-span{
+    color: #5E9994;
+    font-size: 0.9rem;
+
+}
+
+.form-terms{
+
+    color: #585C5C;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #828585;
+    cursor: pointer;
+}
+
+.container-form-owner-slider{
+
+    position: relative;
+}
+
+.slider-polygon{
+
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    clip-path: polygon(0 31%, 82% 0, 100% 100%, 12% 86%);
+    height: 620px;
+    width: 700px;
+    /* background-color: red; */
+}
+
+.slider-polygon img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-form-owner input:focus, .container-form-owner select:focus{
+
+    border: 5px solid #00CCBC;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form owner</title>
+
+    <link rel="stylesheet" href="form-create-owner.css">
+</head>
+<body>
+    <div class="container-form-owner">
+
+        <div class="container-form-owner-bg">
+
+
+            <div class="container-form-owner-collector">
+
+                <div class="container-form-owner-form">
+
+                    <div class="owner-form-partner">
+
+                        Diventa subito partner di Deliveboo
+
+                    </div>
+                    <div class="owner-form-span">
+
+                        Aumenta le tue vendite fino al 30% grazie alle consegne a domicilio
+
+                    </div>
+                    <div class="form-name-address">
+
+                        <input type="text" placeholder="Nome del Ristorante">
+                        <input type="text" placeholder="Indirizzo e numero civico del ristorante">
+
+                    </div>
+                    <div class="form-citta-cap">
+
+                        <div class="form-citta">
+
+                            <input type="text" placeholder="Città o paese">
+
+                        </div>
+                        <div class="form-cap">
+                        
+                            <input type="number" placeholder="CAP">
+                        
+                        </div>
+
+
+                    </div>
+                    <div class="form-select">
+
+                        <select name="" id="">
+
+                            <option value="" selected disabled>Paese</option>
+                            <option value="">Australia</option>
+                            <option value="">Emirati Arabi Uniti</option>
+                            <option value="">Francia</option>
+                            <option value="">Hong Kong</option>
+                            <option value="">Italia</option>
+                            <option value="">Kuwait</option>
+                            <option value="">Paesi Bassi</option>
+                            <option value="">Regno Unito</option>
+                            <option value="">Singapore</option>
+                            <option value="">Spagna</option>
+
+                        </select>
+                        <select name="" id="">
+                        
+                            <option value="" selected disabled>Categoria dell'attività</option>
+                            <option value="">Asporto</option>
+                            <option value="">Bar / Caffetteria / Panificio</option>
+                            <option value="">Donazioni in beneficienza</option>
+                            <option value="">Hotel</option>
+                            <option value="">Negozio MiniMarket</option>
+                            <option value="">Negozio di gastronomia / Paninoteca</option>
+                            <option value="">Negozio di gift card</option>
+                            <option value="">Pub</option>
+                            <option value="">Ristorante</option>
+                            <option value="">Stand gastronomico / Food truck / Ristorante Pop Up</option>
+                        
+                        </select>
+                        <select name="" id="">
+                        
+                            <option value="" selected disabled>Effettui consegne attualmente?</option>
+                            <option value="">Non effettuo consegne</option>
+                            <option value="">Si, utilizzo i miei rider</option>
+                            <option value="">Si, utilizzo un delivery partner</option>
+                 
+                        </select>
+                        <select name="" id="">
+                        
+                            <option value="" selected disabled>Numero di punti vendita</option>
+                            <option value="">1</option>
+                            <option value="">2 - 5</option>
+                            <option value="">6 - 25</option>
+                            <option value="">25 + </option>
+                        
+                        </select>
+                        <select name="" id="">
+                        
+                            <option value="" selected disabled>Tipo di cucina</option>
+                            <!-- <option value="">1</option> -->
+                        
+                        </select>
+
+
+                    </div>
+                    <div class="form-nome-cognome">
+                    
+                        <div class="form-nome">
+                    
+                            <input type="text" placeholder="Nome">
+                    
+                        </div>
+                        <div class="form-cognome">
+                    
+                            <input type="text" placeholder="Cognome">
+                    
+                        </div>
+                    
+                    
+                    </div>
+                    <div class="form-mail-cell">
+                    
+                        <div class="form-mail">
+                    
+                            <input type="email" placeholder="Indirizzo e-mail">
+                    
+                        </div>
+                        <div class="form-cell">
+                    
+                            <input type="text" placeholder="Cellulare (+39...)">
+                    
+                        </div>
+                    
+                    
+                    </div>
+                    <div class="form-button-submit-container">
+
+                        <button type="submit">Invia</button>
+
+                    </div>
+                    <div class="form-final-span-container">
+
+                        <span class="container-final-span">Cliccando "Invia" dichiaro di aver letto e compreso i <span class="form-terms">termini e condizioni di Deliveboo per i ristoranti.</span></span>
+
+                    </div>
+
+
+
+
+
+                    
+
+                </div>
+                <div class="container-form-owner-slider">
+
+                    <div class="slider-polygon">
+
+                        <img name="slide" src="" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        /* start point */
+        var i = 0
+
+        var images = [];
+
+        var time = 3000;
+
+        /* image list */
+
+        images[0] = 'slider-images/slider4.jpg';
+        images[1] = 'slider-images/slider3.jpg';
+        images[2] = 'slider-images/slider2.jpg';
+        images[2] = 'slider-images/slider1.jpg';
+
+        function changeImg(){
+
+            document.slide.src = images[i];
+
+            if(i < images.length - 1){
+
+                i++;
+            } else {
+
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+    </script>
+</body>
+</html>
